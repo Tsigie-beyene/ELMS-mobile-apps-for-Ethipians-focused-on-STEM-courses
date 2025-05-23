@@ -1,8 +1,11 @@
-import { IsIPAD } from "@/themes/app.constant";
+import { IsIPAD } from "@/themes/app.constants";
 import {  Image } from "react-native";
-import { verticalScale } from "react-native-size-matters";
+import { scale, verticalScale } from "react-native-size-matters";
+//@ts-ignore
 import One from "@/assets/images/onboarding/1.png";
+//@ts-ignore
 import Two from "@/assets/images/onboarding/2.png";
+//@ts-ignore
 import Three from "@/assets/images/onboarding/3.png";
 
 

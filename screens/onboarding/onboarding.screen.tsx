@@ -1,7 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import { onBoardingSlides } from "@/configs/constants";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Slider from "@/components/onboarding/slider";
+import Slide from "@/components/onboarding/slide";
+
 
 export default function OnboardingScreen() {
+
     const [index,setIndex]= useState(0)
     const prev = onBoardingSlides[index - 1]
     const next = onBoardingSlides[index + 1]
@@ -9,7 +14,15 @@ export default function OnboardingScreen() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
+       <Slider
+       key={index}
+       index={index}
+       setIndex={setIndex}
+       prev={prev && <Slide slide={prev} totalSlides={onBoardingSlides.length}/>}
+       next={prev && <Slide slide={next} totalSlides={onBoardingSlides.length}/>}
 
+        >
+       </Slider>
     </GestureHandlerRootView>
       
   )
