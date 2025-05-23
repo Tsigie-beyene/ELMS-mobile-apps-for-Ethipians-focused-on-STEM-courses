@@ -49,8 +49,21 @@ Join our community of developers creating universal apps.
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
 
+##
 
+```bash
+npx expo install @react-native-async-storage/async-storage  ```
+##
+``` bash
+npx expo install expo-secure-store 
+```
 
+##
+``` bash
+npm i react-native-gesture-handler @expo/vector-icons expo-linear-gradient react-native-size-matters react-native-reanimated react-native-redash 
+ 
+ ```
 
-
-npx expo install @react-native-async-storage/async-storage
+  ``` bash
+  npm i react-native-status-bar-height
+     ```
