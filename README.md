@@ -51,19 +51,26 @@ Join our community of developers creating universal apps.
 
 ##
 
-```bash
+````bash
 npx expo install @react-native-async-storage/async-storage  ```
 ##
 ``` bash
-npx expo install expo-secure-store 
-```
+npx expo install expo-secure-store
+````
 
 ##
-``` bash
-npm i react-native-gesture-handler @expo/vector-icons expo-linear-gradient react-native-size-matters react-native-reanimated react-native-redash 
- 
- ```
 
+```bash
+npm i react-native-gesture-handler @expo/vector-icons expo-linear-gradient react-native-size-matters react-native-reanimated react-native-redash
+
+```
+
+````bash
+npm i react-native-status-bar-height
+   ```
   ``` bash
-  npm i react-native-status-bar-height
-     ```
+  npm i react-native-svg
+  @react-native-community/masked-view
+  npm i expo-blur
+   ```
+````

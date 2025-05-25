@@ -15,13 +15,18 @@ export default function OnboardingScreen() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
        <Slider
-       key={index}
-       index={index}
-       setIndex={setIndex}
-       prev={prev && <Slide slide={prev} totalSlides={onBoardingSlides.length}/>}
-       next={prev && <Slide slide={next} totalSlides={onBoardingSlides.length}/>}
-
+        key={index}
+        index={index}
+        setIndex={setIndex}
+        prev={prev && <Slide index={index} setIndex={setIndex}  slide={prev} totalSlides={onBoardingSlides.length} />}
+        next={prev && <Slide  index={index} setIndex={setIndex} slide={next} totalSlides={onBoardingSlides.length} />} 
         >
+       <Slide
+          slide={onBoardingSlides[index]}
+          index={index}
+          setIndex={setIndex}
+          totalSlides={onBoardingSlides.length}
+        />
        </Slider>
     </GestureHandlerRootView>
       
