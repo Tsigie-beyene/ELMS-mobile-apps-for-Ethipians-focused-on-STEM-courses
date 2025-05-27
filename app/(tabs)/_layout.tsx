@@ -1,12 +1,10 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { View, Text } from 'react-native'
+import React from 'react'
 
-export default function TabLayout() {
-
+export default function _layout() {
   return (
-    <Tabs>
-     
-
-    </Tabs>
-  );
+    <View>
+      <Text>_layout</Text>
+    </View>
+  )
 }

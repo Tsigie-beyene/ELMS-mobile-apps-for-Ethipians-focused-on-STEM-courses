@@ -63,6 +63,7 @@ npx expo install expo-secure-store
 ```bash
 npm i react-native-gesture-handler @expo/vector-icons expo-linear-gradient react-native-size-matters react-native-reanimated react-native-redash
 
+
 ```
 
 ````bash
@@ -72,5 +73,9 @@ npm i react-native-status-bar-height
   npm i react-native-svg
   @react-native-community/masked-view
   npm i expo-blur
+  @expo-google-fonts/poppins
+  @react-native-google-signin/google-signin
+  expo-auth-
+  npm i -g eas-cli
    ```
 ````

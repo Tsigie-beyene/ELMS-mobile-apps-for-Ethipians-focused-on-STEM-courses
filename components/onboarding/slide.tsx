@@ -19,8 +19,8 @@ import {
 } from "@/themes/app.constants";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
-import {BlurView} from "expo-blur";
-// import AuthModal from "../auth/auth.modal";
+import AuthModal from "../auth/auth.modal";
+
 
 export default function Slide({
   slide,
@@ -123,7 +123,7 @@ export default function Slide({
               alignItems: "center",
               width: "100%",
               height: "100%",
-            }}  
+            }}
             onPress={() => handlePress(index, setIndex)}
           >
             <Text style={styles.nextButtonText}>Next</Text>
@@ -151,10 +151,7 @@ export default function Slide({
         }}
       >
         <Pressable style={{ flex: 1 }} onPress={() => setModalVisible(false)}>
-          {/* <AuthModal setModalVisible={setModalVisible} /> */}
-          <BlurView
-            style={{flex:1, justifyContent: "center", alignItems: "center"}} >
-          </BlurView>
+          <AuthModal setModalVisible={setModalVisible} />
         </Pressable>
       </Modal>
     </>
