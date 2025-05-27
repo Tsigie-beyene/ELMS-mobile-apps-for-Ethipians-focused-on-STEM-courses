@@ -156,7 +156,7 @@ export default function AuthModal({
     await SecureStore.setItemAsync("avatar", email);
 
     setModalVisible(false);
-    router.push("/(tabs)");
+    router.push("/(tabs)" as any);
   };
 
   return (
